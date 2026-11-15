@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-  <meta charset="utf-8">  
+  <meta charset="utf-8">
   <title>markdown note taker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="app-header">
     <h1>Notes</h1>
-    <div class="actions">  
+    <div class="actions">
       <button id="new-btn" type="button">New Note</button>
       <button id="export-btn" type="button">Export All</button>
     </div>
   </header>
   <main class="app-layout">
     <section class="sidebar">
-      <input type="search" id="search-input" placeholder="Filter notes...">  
+      <input type="search" id="search-input" placeholder="Filter notes...">
       <ul id="notes-list" tabindex="0"></ul>
     </section>
     <section class="editor-pane">
       <input type="text" id="note-title" placeholder="Note title...">
       <div class="split-view">
         <textarea id="note-body" placeholder="Write markdown here..."></textarea>
-        <div id="preview-pane" class="preview"></div>  
+        <div id="preview-pane" class="preview"></div>
       </div>
     </section>
   </main>
   <script src="script.js"></script>
 </body>
 </html>
-
-
